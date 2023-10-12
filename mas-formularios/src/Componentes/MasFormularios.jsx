@@ -3,15 +3,15 @@ import "./MasFormularios.css"
 
 const Formulario = () => {
     const [Nombre, setNombre] = useState("");
-    const [NombreError, setNombreError] = useState("El campo debe tener al menos 2 caracteres.");
+    const [NombreError, setNombreError] = useState("");
     const [Apellido, setApellido] = useState("");
-    const [ApellidoError, setApellidoError] = useState("El campo debe tener al menos 2 caracteres.");
+    const [ApellidoError, setApellidoError] = useState("");
     const [Correo, setCorreo] = useState("");
-    const [MailError, setMailError] = useState("El campo debe tener al menos 5 caracteres.");
+    const [MailError, setMailError] = useState("");
     const [Contraseña, setContraseña] = useState("");
-    const [PasswordError, setPasswordError] = useState("El campo debe tener al menos 8 caracteres.");
+    const [PasswordError, setPasswordError] = useState("");
     const [ConfirmContraseña, setConfirmContraseña] = useState("");
-    const [ConfirmPasswordError, setConfirmPasswordError] = useState("Las contraseñas deben coincidir.");
+    const [ConfirmPasswordError, setConfirmPasswordError] = useState("");
 
     const manejadorDeErrorNombre = (e) => {
         setNombre(e.target.value);
@@ -109,6 +109,4 @@ const Formulario = () => {
         </form>
     );
 }
-
-
 export default Formulario;
